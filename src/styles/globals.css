@@ -15,7 +15,14 @@ html{
 body{
 
     font-family:var(--body-font);
-    background:var(--light);
+    #background:var(--light);
+    background:
+    linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #1d4ed8
+    );
     color:var(--gray-700);
 
 }
@@ -161,6 +168,6 @@ textarea{
 }
 main{
 
-margin-top:90px;
+margin-top:0px;
 
 }
