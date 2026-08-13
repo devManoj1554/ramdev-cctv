@@ -27,11 +27,7 @@ function Navbar() {
     <header className={sticky ? "navbar sticky" : "navbar"}>
       <div className="container navbar-container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <span>⚡</span>
-          <div>
-            <h2>RAMDEV CCTV</h2>
-            <small>Electrician • E-Mitra</small>
-          </div>
+          <img src="/logo.webp" alt="RAMDEV CCTV" />
         </Link>
 
         <nav className={menuOpen ? "nav active" : "nav"}>
