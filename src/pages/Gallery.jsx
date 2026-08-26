@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import PageBanner from "../components/layout/PageBanner";
@@ -11,12 +12,11 @@ import SEO from "../components/common/SEO";
 function Gallery() {
   return (
     <>
-	
-	<SEO
-	title="Gallery"
-	description="View our CCTV installation projects, electrical work and completed security solutions."
-	/>
-	
+      <SEO
+        title="Gallery"
+        description="View our CCTV installation projects, electrical work and completed security solutions."
+      />
+
       <Navbar />
 
       <PageBanner
@@ -25,9 +25,7 @@ function Gallery() {
       />
 
       <GallerySection />
-
       <Testimonials />
-
       <ContactCTA />
 
       <Footer />

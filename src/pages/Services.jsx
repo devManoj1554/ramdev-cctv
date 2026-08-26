@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import PageBanner from "../components/layout/PageBanner";
@@ -12,12 +13,11 @@ import SEO from "../components/common/SEO";
 function Services() {
   return (
     <>
-	
-	<SEO
-	title="Our Services"
-	description="Professional CCTV installation, electrical repair, wiring and E-Mitra services in Sri Ganganagar."
-	/>
-	
+      <SEO
+        title="Our Services"
+        description="Professional CCTV installation, electrical repair, wiring and E-Mitra services in Sri Ganganagar."
+      />
+
       <Navbar />
 
       <PageBanner
@@ -26,11 +26,8 @@ function Services() {
       />
 
       <ServicesSection />
-
       <WhyChooseUs />
-
       <FAQ />
-
       <ContactCTA />
 
       <Footer />

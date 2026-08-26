@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "../components/layout/Navbar";
 import Hero from "../components/home/Hero";
 import AboutPreview from "../components/home/AboutPreview";
@@ -16,7 +17,8 @@ import SEO from "../components/common/SEO";
 function Home() {
   return (
     <>
-		<SEO />
+      <SEO />
+
       <Navbar />
 
       <main>

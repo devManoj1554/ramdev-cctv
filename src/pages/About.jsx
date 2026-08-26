@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import PageBanner from "../components/layout/PageBanner";
@@ -13,12 +14,11 @@ import SEO from "../components/common/SEO";
 function About() {
   return (
     <>
-	
-	<SEO
-	title="About Us"
-	description="Learn about RAMDEV CCTV CAMERA and our experience in CCTV installation, electrician services and E-Mitra."
-	/>
-	
+      <SEO
+        title="About Us"
+        description="Learn about RAMDEV CCTV CAMERA and our experience in CCTV installation, electrician services and E-Mitra."
+      />
+
       <Navbar />
 
       <PageBanner
@@ -27,13 +27,9 @@ function About() {
       />
 
       <AboutPreview />
-
       <WhyChooseUs />
-
       <Counter />
-
       <Testimonials />
-
       <ContactCTA />
 
       <Footer />

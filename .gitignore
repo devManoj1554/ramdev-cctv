@@ -11,6 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
+dump.py
+dump.txt
+dist
+
 
 # Editor directories and files
 .vscode/*

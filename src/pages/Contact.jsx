@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import PageBanner from "../components/layout/PageBanner";
@@ -11,12 +12,11 @@ import SEO from "../components/common/SEO";
 function Contact() {
   return (
     <>
-	
-	<SEO
-	title="Contact Us"
-	description="Call or WhatsApp RAMDEV CCTV CAMERA for CCTV installation, electrician and E-Mitra services."
-	/>
-	
+      <SEO
+        title="Contact Us"
+        description="Call or WhatsApp RAMDEV CCTV CAMERA for CCTV installation, electrician and E-Mitra services."
+      />
+
       <Navbar />
 
       <PageBanner
@@ -25,9 +25,7 @@ function Contact() {
       />
 
       <GoogleMap />
-
       <FAQ />
-
       <ContactCTA />
 
       <Footer />

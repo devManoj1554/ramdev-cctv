@@ -1,0 +1,309 @@
+@import "tailwindcss";
+
+/*
+=====================================
+RAMDEV CCTV — GLOBAL STYLES
+=====================================
+*/
+
+@theme {
+  /* Colors */
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #0f172a;
+  --color-accent: #06b6d4;
+
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #64748b;
+  --color-text-muted: #94a3b8;
+
+  /* Typography */
+  --font-primary: "Inter", sans-serif;
+  --font-heading: "Poppins", sans-serif;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Container */
+  --container-width: 1200px;
+
+  /* Shadows */
+  --shadow-sm: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 15px 35px rgba(0, 0, 0, 0.10);
+  --shadow-lg: 0 30px 60px rgba(0, 0, 0, 0.15);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s ease;
+}
+
+
+/*
+=====================================
+BASE RESET
+=====================================
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  background: var(--color-background);
+  color: var(--color-text-primary);
+
+  font-family: var(--font-primary);
+  line-height: 1.6;
+
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+
+/*
+=====================================
+TYPOGRAPHY
+=====================================
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+
+/*
+=====================================
+LAYOUT
+=====================================
+*/
+
+.container {
+  width: min(92%, var(--container-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+
+/*
+=====================================
+GRADIENTS
+=====================================
+*/
+
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.gradient-background {
+  background: linear-gradient(
+    135deg,
+    #020617,
+    #0f172a,
+    #1d4ed8
+  );
+}
+
+
+/*
+=====================================
+PREMIUM GLASS CARD
+=====================================
+*/
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-md);
+}
+
+
+/*
+=====================================
+BUTTON
+=====================================
+*/
+
+.button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0.9rem 1.8rem;
+
+  border-radius: var(--radius-full);
+
+  background: var(--color-primary);
+  color: white;
+
+  font-weight: 600;
+
+  transition: var(--transition-normal);
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  background: var(--color-primary-dark);
+}
+
+
+/*
+=====================================
+SCROLLBAR
+=====================================
+*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+  border-radius: var(--radius-full);
+}
+
+
+/*
+=====================================
+SELECTION
+=====================================
+*/
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+
+/*
+=====================================
+ACCESSIBILITY
+=====================================
+*/
+
+:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.45);
+  outline-offset: 3px;
+}
+
+
+/*
+=====================================
+REDUCED MOTION
+=====================================
+*/
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+/*
+=====================================
+MOBILE
+=====================================
+*/
+
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+}

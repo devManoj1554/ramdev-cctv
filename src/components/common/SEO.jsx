@@ -11,7 +11,7 @@ function SEO({
   image = "/images/og-image.jpg",
   url = seoData.url,
   type = "website",
-  noIndex = false
+  noIndex = false,
 }) {
   const fullTitle = title.includes(business.name)
     ? title
@@ -19,9 +19,6 @@ function SEO({
 
   return (
     <Helmet>
-
-      {/* Basic */}
-
       <title>{fullTitle}</title>
 
       <meta
@@ -53,8 +50,6 @@ function SEO({
         rel="canonical"
         href={url}
       />
-
-      {/* Open Graph */}
 
       <meta
         property="og:type"
@@ -91,8 +86,6 @@ function SEO({
         content="en_IN"
       />
 
-      {/* Twitter */}
-
       <meta
         name="twitter:card"
         content="summary_large_image"
@@ -112,7 +105,6 @@ function SEO({
         name="twitter:image"
         content={image}
       />
-
     </Helmet>
   );
 }

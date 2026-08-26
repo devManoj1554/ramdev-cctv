@@ -1,15 +1,10 @@
 import React from "react";
 import useScrollTop from "../../hooks/useScrollTop";
 
+function ScrollTop() {
+  useScrollTop();
 
-function ScrollTop(){
-
-useScrollTop();
-
-
-return null;
-
+  return null;
 }
-
 
 export default ScrollTop;
