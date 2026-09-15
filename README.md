@@ -16,10 +16,10 @@ A modern management application for CCTV sales, installation services, and inven
 
 ## 🛠 Tech Stack
 
-- **Backend:** Node.js / Java (Spring Boot) / Python *(Select your core engine)*
-- **Frontend:** React / React Native / Android Native
-- **Database:** PostgreSQL / MongoDB / SQLite
-- **Authentication:** JWT / Firebase Auth
+- **Backend:** Java (Spring Boot)
+- **Frontend:** React
+- **Database:** PostgreSQL
+- **Authentication:** JWT
 
 ---
 
@@ -29,9 +29,9 @@ A modern management application for CCTV sales, installation services, and inven
 
 Ensure you have the following installed on your local development machine:
 
-- Node.js (v18+ recommended) or JDK (v17+)
+- react.js (v18+ recommended)
 - Git
-- Database server (PostgreSQL / MongoDB)
+- Database server (PostgreSQL)
 
 ### Installation
 
